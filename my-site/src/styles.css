@@ -1,0 +1,22 @@
+.title-bar {
+    background-color: blue; /* Set background color to blue */
+    color: white; /* Set text color to white */
+    padding: 10px 20px; /* Add padding */
+    font-size: 0.7rem; /* Adjust font size */
+    display: flex; /* Enable flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: fixed; /* Make the bar fixed at the top */
+    top: 0; /* Set top position to 0 */
+    left: 0; /* Set left position to 0 */
+    width: 100%; /* Make the bar cover the entire width */
+    z-index: 1; /* Ensure the bar stays on top of other content */
+    margin-bottom: 1rem;
+}
+
+.App {
+    /* Existing styles */
+    display: flex; /* Enable flexbox for stacking elements */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure app fills the viewport */
+}

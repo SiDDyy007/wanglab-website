@@ -1,38 +1,63 @@
+
+
+
+  /* Existing styles */
+  /* display: flex; Enable flexbox for stacking elements */
+  /* flex-direction: column; Stack elements vertically */
+  /* min-height: 100vh; Ensure app fills the viewport */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.logo-container {
+  width: 70px; /* Adjust width as desired */
+  height: 50px; /* Adjust height as desired */
+  margin-right: 1rem; /* Add margin for spacing */
+}
+
+.lab {
+  height: auto; /* Adjust height as needed */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.lab-image {
+  width: 60vw; /* 60% viewport width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Resize while preserving aspect ratio */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation {
+  flex: 1;
+  background-color: #f4f4f4; /* or any color you prefer */
+  height: 100vh; /* full height */
+  overflow-y: auto; /* enable scroll if content is longer */
+  position: fixed; /* makes the navbar stationary */
+  width: 200px; /* fixed width, you can adjust as you like */
+  padding: 20px;
 }
+.lab-content {
+  flex: 3;
+  margin-left: 200px; /* should be the same as the width of the navigation bar */
+  padding: 20px;
+  text-align: left;
+}
+
+.container {
+  padding-left: 200px; /* Add padding to accommodate navigation bar */
+}
+
+.lab-image {
+  /* Existing styles */
+  position: relative;
+  top: 50px;
+}
+
+
+
