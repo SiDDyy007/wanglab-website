@@ -1,6 +1,5 @@
 import {React} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  
-import Stack from 'react-bootstrap/Stack';
 import './App.css'; 
 import TitleBar from './components/TitleBar.js';
 import Navigation from './components/Navigation.js'; 
@@ -14,6 +13,11 @@ import Members  from './components/Members.js';
 import Contact from './components/Contact.js';
 import Teaching from './components/Teaching.js';
 import Resources from './components/Resources.js';
+import Fellowships from './components/Fellowships.js';
+import Terminology from './components/Terminology.js';
+import CodingResources from './components/CodingResources.js';
+import LabResources from './components/LabResources.js';
+import Contents from './components/Contents.js';
 
 function App() {
   return (
@@ -37,6 +41,10 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/teaching' element={<Teaching />} />
           <Route path='/resources' element={<Resources />} />
+          <Route path='/fellowships' element={<Fellowships />} />
+          <Route path='/terminology' element={<Terminology />} />
+          <Route path='/codingresources' element={<CodingResources />} />
+          <Route path='/labresources' element={<LabResources />} />
         </Routes>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const Contact = () => {
+const LabResources = () => {
   return (
     <div>
       <div className="lab-content">
@@ -19,4 +19,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default LabResources;

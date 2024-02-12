@@ -6,10 +6,8 @@ import wanglab_photo from '../images/wanglab-photo.jpeg';
 const Research = () => {
   return (
     <div>
-      {/* <TitleBar labName='Wang Bioinformatics Lab @ UCR' /> */}
 
       <div className="main-content">
-        <Navigation />
 
         <div className='lab-content'>
           <div className="lab">
